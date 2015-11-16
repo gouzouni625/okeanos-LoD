@@ -4,7 +4,7 @@ import DS from "ember-data";
 var LambdaApp = DS.Model.extend({
   name: DS.attr(),
   path: DS.attr(),
-  app_type: DS.attr(),
+  type: DS.attr(),
   description: DS.attr(),
   status_message: DS.attr(),
   status_code: DS.attr('number'),
