@@ -97,15 +97,13 @@
                   {{/link-to}}
                 </td>
                 <td>{{lambda-application.status_detail}}</td>
-                <td>{{lower-case lambda-application.app_type}}</td>
+                <td>{{lower-case lambda-application.type}}</td>
 
 
                 <td>
                   {{#link-to 'lambda-app' lambda-application.id}}
                   <button class="btn btn-info btn-xs"><i class="fa fa-file-code-o"></i> Details</button>
                   {{/link-to}}
-                </td>
-                  <td>
                   {{#if (compare lambda-application.status_code '==' '0')}}
                     {{#link-to 'deploy-app-1' lambda-application.id}}
                         <button class="btn btn-primary btn-xs"
@@ -123,8 +121,6 @@
                         </button>
                     {{/tool-tip}}
                   {{/if}}
-                  </td>
-                  <td>
                       <button name="del-btn" id="del-btn" class="btn btn-danger btn-xs" {{action "delete_app" lambda-application.id}}><i class="fa fa-times"></i> Delete</button>
                   </td>
               </tr>

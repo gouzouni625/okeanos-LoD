@@ -66,7 +66,7 @@
                                   {{#each sortedApps as |application|}}
                                       <tr>
                                           <td>{{application.name}}</td>
-                                          <td>{{lower-case application.app_type}}</td>
+                                          <td>{{lower-case application.type}}</td>
                                           <td>{{application.id}}</td>
                                           <td>{{app-action action="deploy" deploy=true app=app
                                           application-id=application.id instance-id=instance.id
